@@ -25,12 +25,13 @@ const Background = () => {
             <Phrase 
               randomPhrase={randomPhrase}
             />
+            
+            <img className='card' src='./src/assets/rectangle1.svg' alt='Img Rectangle'></img>
+            </div> 
             <Button
               setRandomPhrase={setRandomPhrase}
               setRandomImage={setRandomImage} 
             />
-            <img className='card' src='./src/assets/rectangle1.svg' alt='Img Rectangle'></img>
-            </div> 
         </div>
       </div>
     </div>

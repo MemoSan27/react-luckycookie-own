@@ -11,7 +11,7 @@ const Button = ({ setRandomPhrase, setRandomImage }) => {
 
   return (
     <>
-      <button onClick={handleChangePhrase}>New Phrase</button>  
+      <button className="btnNext" onClick={handleChangePhrase}>New Phrase</button>  
     </>
   )
 }

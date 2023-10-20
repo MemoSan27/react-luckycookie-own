@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;   
     
 }
 html {
     font-size: 62.5%;  /*  1REM = 10x */
-    color: var(--colorPrincipal);
-    font-family: var(--fuentePrincipal);
+     
 }
 .background{
     width: 100%;
@@ -16,6 +16,7 @@ html {
     min-height: 100vh;
     background-position-x: 45%;
     display: flex;
+    
 }
 @media ( min-width: 768px ) { 
     .background{
@@ -31,13 +32,48 @@ html {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 15rem;
     height: 40rem;
     text-align: center;
     margin-top: 16rem;
 }
+
 .card{
     width: 100%;
+    position: relative;
+    bottom: 21rem;
+}
+@media ( min-width: 768px ) { 
+    .card{
+        bottom: 23rem;
+    }
+}
+.article{
+    z-index: 3;
+    max-width: 70%;
+    margin: 0 auto;
+}
+.btnNext{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: -8rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #C2E7FF;
+    border: 2px solid white;
+    color: #6E6C6B;
+    border-radius: 1rem;
+
+}
+.btnNext:hover{
+    cursor: pointer;
+}
+@media ( min-width: 523px ) { 
+    .btnNext{
+        width: 20%;
+        margin-top: -3rem;
+    }
 }
 
 
