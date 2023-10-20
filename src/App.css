@@ -52,7 +52,6 @@ h1{
     margin-top: 16rem;
     align-items: center;
 }
-
 .card{
     width: 100%;
     position: relative;
@@ -71,6 +70,25 @@ h1{
 .phrase{
     font-size: 1.3rem;
     font-weight: 700;
+    position: relative;
+    min-height: 4.5rem;
+}
+.phrase::after{
+    content: '';
+    background-image: url('/src/assets/comilla.png');
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 4.7rem;
+    right: 3rem;
+    
+}
+@media ( min-width: 768px ) { 
+    .phrase::after{
+        top: 3.5rem;
+    }
 }
 .btnNext{
     width: 30%;
