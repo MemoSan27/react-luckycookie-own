@@ -19,15 +19,18 @@ const Background = () => {
          }}
         
          >
-        <div> 
-          <h1> Galleta de la fortuna</h1>
-          <Phrase 
-            randomPhrase={randomPhrase}
-          />
-          <Button
-            setRandomPhrase={setRandomPhrase}
-            setRandomImage={setRandomImage} 
-          />
+        <div className='container'>
+          <div className='box'>
+            <h1> Galleta de la fortuna</h1>
+            <Phrase 
+              randomPhrase={randomPhrase}
+            />
+            <Button
+              setRandomPhrase={setRandomPhrase}
+              setRandomImage={setRandomImage} 
+            />
+            <img className='card' src='./src/assets/rectangle1.svg' alt='Img Rectangle'></img>
+            </div> 
         </div>
       </div>
     </div>

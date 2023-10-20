@@ -9,13 +9,35 @@ html {
     color: var(--colorPrincipal);
     font-family: var(--fuentePrincipal);
 }
-body{
-    
-}
 .background{
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    background-position-x: 45% ;
+    background-position-x: 45%;
+    display: flex;
 }
+@media ( min-width: 768px ) { 
+    .background{
+        background-position: 60%;
+    }
+}
+.container{
+    max-width: 140rem;
+    margin: 0 auto;
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40rem;
+    text-align: center;
+    margin-top: 16rem;
+}
+.card{
+    width: 100%;
+}
+
+
