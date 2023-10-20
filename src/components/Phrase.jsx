@@ -5,7 +5,7 @@ const Phrase = ({ randomPhrase }) => {
   return (
       <>
         <article className="article">
-            <p> {phrase} </p>
+            <p className="phrase"> {phrase} </p>
         </article>
       </>
     )

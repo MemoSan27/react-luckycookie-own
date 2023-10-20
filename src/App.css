@@ -1,13 +1,27 @@
+:root{
+    --mainFont: sans-serif; 
+    --textColor: #6E6C6B;
+    --btnColor: #C2E7FF;
+    --whiteColor: white;
+    --textShadow: rgba(0,0,0,0.25);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;   
-    
 }
 html {
     font-size: 62.5%;  /*  1REM = 10x */
-     
+    font-family: var(--mainFont);
+    color: var(--textColor);   
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 900;
+    color: var(--whiteColor);
+    text-shadow: 13px 6px 2px var(--textShadow);
+    max-width: 35.1rem;
 }
 .background{
     width: 100%;
@@ -36,16 +50,17 @@ html {
     height: 40rem;
     text-align: center;
     margin-top: 16rem;
+    align-items: center;
 }
 
 .card{
     width: 100%;
     position: relative;
-    bottom: 21rem;
+    bottom: 25rem;
 }
 @media ( min-width: 768px ) { 
     .card{
-        bottom: 23rem;
+        bottom: 28rem;
     }
 }
 .article{
@@ -53,17 +68,22 @@ html {
     max-width: 70%;
     margin: 0 auto;
 }
+.phrase{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
 .btnNext{
     width: 30%;
     margin: 0 auto;
-    margin-top: -8rem;
+    margin-top: -2rem;
     display: flex;
     justify-content: center;
-    padding: 1.5rem;
-    background-color: #C2E7FF;
-    border: 2px solid white;
-    color: #6E6C6B;
+    padding: 1rem 1.5rem;
+    background-color: var(--btnColor);
+    border: 2px solid var(--whiteColor);
+    color: var(--textColor);
     border-radius: 1rem;
+    font-weight: 700;
 
 }
 .btnNext:hover{
@@ -72,7 +92,7 @@ html {
 @media ( min-width: 523px ) { 
     .btnNext{
         width: 20%;
-        margin-top: -3rem;
+        margin-top: 1rem;
     }
 }
 

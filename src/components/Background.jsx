@@ -21,7 +21,7 @@ const Background = () => {
          >
         <div className='container'>
           <div className='box'>
-            <h1> Galleta de la fortuna</h1>
+            <h1 className='title'> Galletas de la fortuna</h1>
             <Phrase 
               randomPhrase={randomPhrase}
             />
