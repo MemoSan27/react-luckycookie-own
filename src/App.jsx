@@ -3,6 +3,7 @@ import './App.css'
 import phrases from './utils/phrases.json'
 import getRandomFromArr from './services/getRandomFromArr'
 import Phrase from './components/Phrase';
+import Button from './components/Button';
 
 function App() {
   
@@ -15,6 +16,9 @@ function App() {
         <h1> Galleta de la fortuna</h1>
         <Phrase 
           randomPhrase={randomPhrase}
+        />
+        <Button
+          setRandomPhrase={setRandomPhrase}
         />
       </div>
     </>
