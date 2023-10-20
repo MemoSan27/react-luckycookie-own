@@ -3,4 +3,9 @@ const getRandomFromArr = (arr) => {
     return arr[randomIndex];
 }
 
+export const getRandomImage = ( image = 4 ) => {
+    const randomImage = Math.floor(Math.random() * image);
+    return randomImage;
+}
+
 export default getRandomFromArr
