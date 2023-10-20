@@ -1,10 +1,12 @@
-import getRandomFromArr from "../services/getRandomFromArr"
+import getRandomFromArr, { getRandomImage } from "../services/getRandomFromArr"
 import phrases from '../utils/phrases.json'
 
-const Button = ({ setRandomPhrase }) => {
+const Button = ({ setRandomPhrase, setRandomImage }) => {
     const handleChangePhrase = () => {
-        const quote = getRandomFromArr(phrases)
-        setRandomPhrase(quote)
+        const quote = getRandomFromArr(phrases);
+        const image = getRandomImage();
+        setRandomPhrase(quote);
+        setRandomImage( image );
     }
 
   return (
