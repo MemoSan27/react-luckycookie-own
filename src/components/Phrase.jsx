@@ -3,11 +3,7 @@ const Phrase = ({ randomPhrase }) => {
     const { phrase } = randomPhrase;
 
   return (
-      <>
-        <article>
-            <p> {phrase} </p>
-        </article>
-      </>
+      <p className="app__phrase"> {phrase} </p>
     )
 }
 
